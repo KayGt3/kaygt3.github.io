@@ -1,5 +1,9 @@
 Import-Module -Name OSDProgress -Force
 
+Write-Host  -ForegroundColor Cyan "Sono qui!"
+
+Start-Sleep -Seconds 5
+
 Watch-OSDCloudProvisioning {
     Write-Host -ForegroundColor Cyan "Hey this script running an OSD Cloud ZTI Deployment while displaying a MahApps.Metro progress window"
 
@@ -24,4 +28,4 @@ Watch-OSDCloudProvisioning {
     Update-OSDProgress -Text "Reboot in 20 seconds"
     Start-Sleep -Seconds 20
     wpeutil reboot
-} -Window -Style Win10
+} -Window -Style Win11
