@@ -25,4 +25,3 @@ Watch-OSDCloudProvisioning {
     Start-Sleep -Seconds 20
     wpeutil reboot
 } -Window -Style Win10
-}
