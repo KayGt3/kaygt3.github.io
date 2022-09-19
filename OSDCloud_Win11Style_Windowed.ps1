@@ -13,7 +13,7 @@ Watch-OSDCloudProvisioning {
     Start-Sleep -Seconds 5
     Update-OSDProgress -Text " " # hide first text
 
-    Start-OSDCloud -OSVersion "Windows 11" -OSBuild 21H2 -OSLanguage en-us -OSEdition Pro -ZTI
+    Start-OSDCloud -OSVersion "Windows 11" -OSBuild 21H2 -OSLanguage it-it -OSEdition Pro -ZTI
 
     #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
     Update-OSDProgress -Text "Running OSDCloud PostAction stuff..."
