@@ -16,16 +16,16 @@ Watch-OSDCloudProvisioning {
     Start-OSDCloud -OSVersion "Windows 11" -OSBuild 21H2 -OSLanguage it-it -OSEdition Pro -OSLicense Retail -ZTI
 
     #Anything I want  can go right here and I can change it at any time since it is in the Cloud!!!!!
-    Update-OSDProgress -Text "Running OSDCloud PostAction stuff..."
+    Update-OSDProgress -Text "Running OSDCloud PostAction stuff..." -Phase 3
     Write-Host  -ForegroundColor Cyan "Running OSDCloud PostAction stuff..."
     Start-Sleep -Seconds 5
-    Update-OSDProgress -Text " " # hide first text
+    #Update-OSDProgress -Text " " # hide first text
 
     # lets throw an error, just for fun
     #Update-OSDProgress -DisplayError "Custom error message, pls unlock screen!"
 
     #Restart from WinPE
-    Update-OSDProgress -Text "Reboot in 20 seconds"
+    Update-OSDProgress -Text "Reboot in 20 seconds" -Phase Finish
     Start-Sleep -Seconds 20
     wpeutil reboot
 } -Window -Style Win10
