@@ -8,10 +8,10 @@ Watch-OSDCloudProvisioning {
     Write-Host -ForegroundColor Cyan "Hey this script running an OSD Cloud ZTI Deployment while displaying a MahApps.Metro progress window"
 
     #Start OSDCloud ZTI
-    Update-OSDProgress -Text "Running OSDCloud PreAction stuff..." # output to UI
+    Update-OSDProgress -Text "Starting OSDCLoud"
     Write-Host  -ForegroundColor Cyan "Running OSDCloud PreAction stuff..." # output to console
     Start-Sleep -Seconds 5
-    Update-OSDProgress -Text " " # hide first text
+    Update-OSDProgress -Text "Downloading Windows OS" -Phase 2
 
     Start-OSDCloud -OSVersion "Windows 11" -OSBuild 21H2 -OSLanguage it-it -OSEdition Pro -OSLicense Retail -ZTI
 
@@ -28,4 +28,4 @@ Watch-OSDCloudProvisioning {
     Update-OSDProgress -Text "Reboot in 20 seconds"
     Start-Sleep -Seconds 20
     wpeutil reboot
-} -Window -Style Win11
+} -Window -Style Win10
