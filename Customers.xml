@@ -2,14 +2,22 @@
 <customers>
   <customer>
     <name>Cliente 1</name>
+    <daas>SI</daas>
+    <technology>WS1</technology>
   </customer>
   <customer>
     <name>Cliente 2</name>
+    <daas>NO</daas>
+    <technology>MEM</technology>
   </customer>
   <customer>
     <name>Cliente 3</name>
+    <daas>NO</daas>
+    <technology>ME</technology>
   </customer>
   <customer>
     <name>Cliente 4</name>
+    <daas>NO</daas>
+    <technology></technology>
   </customer>
 </customers>
